@@ -15,7 +15,7 @@ class clsDatabase{
     $dbName = dbName;
 
     $con = mysqli_connect($dbServerName,$dbUsername,$dbPassword) or die("cannot connect");
-    mysqli_select_db($con,dbName) or die("cannot connect");
+    mysqli_select_db($con,$dbName) or die("cannot connect");
 
     $this->con = $con;
 
